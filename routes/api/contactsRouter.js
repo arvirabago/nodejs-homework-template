@@ -15,7 +15,6 @@ router.get("/:contactId", authenticateToken, ctrlWrapper(getContactById));
 
 router.post("/", authenticateToken, ctrlWrapper(addContact));
 
-
 router.delete("/:contactId", authenticateToken, ctrlWrapper(deleteContactById));
 
 
